@@ -38,6 +38,7 @@ public class SortTest {
 
         int loopCounter = 0;
         for(int i = 25; i <= MAX_ARR_LEN; i += 25){
+//        for(int i = 0; i <= 6; i += 1){
 
             loopCounter++;
 
@@ -48,6 +49,7 @@ public class SortTest {
 
             System.out.println("Test No.: " + loopCounter);
             System.out.println("Array Length: " + i);
+            System.out.println();
 
             startTime = System.nanoTime();
             int bubbleComparisons       = BubbleSortArray.bubbleSort(bubbleSortData);

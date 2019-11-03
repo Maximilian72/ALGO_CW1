@@ -47,7 +47,7 @@ public class ArrayUtil {
         Random generator = new Random();
 
         for(int i = 0; i< size; i++) {
-            int value = generator.nextInt(1000);
+            int value = generator.nextInt(size);
             resultArray[i] = value;
         }
         return resultArray;
