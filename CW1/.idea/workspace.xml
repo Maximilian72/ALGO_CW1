@@ -26,6 +26,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -38,7 +43,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SortTest3">
     <configuration name="SortTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SortTest" />
       <module name="CW1#2" />
@@ -46,8 +51,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SortTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SortTest2" />
+      <module name="CW1#2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortTest3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SortTest3" />
+      <module name="CW1#2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SortTest3" />
+        <item itemvalue="Application.SortTest2" />
         <item itemvalue="Application.SortTest" />
       </list>
     </recent_temporary>
@@ -63,6 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572554434564</updated>
       <workItem from="1572694772359" duration="5697000" />
+      <workItem from="1572869519142" duration="10269000" />
     </task>
     <servers />
   </component>
@@ -74,7 +96,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

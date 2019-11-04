@@ -3,6 +3,7 @@ public class BubbleSortArray {
     public static int bubbleSort(Integer[] array){
 
         int numberOfComparisons = 0;
+        int numberOfSwaps = 0;
 
         int arrayLength = array.length;
         for(int i = 0; i <= arrayLength; i++){
@@ -15,6 +16,7 @@ public class BubbleSortArray {
                 numberOfComparisons++;
                 if (array[j-1] > array[j]) {
 
+                    numberOfSwaps++;
                     Integer temp    = array[j];
                     array[j]        = array[j-1];
                     array[j-1]      = temp;
@@ -25,7 +27,8 @@ public class BubbleSortArray {
 
         }
 
-        return numberOfComparisons;
+//        return numberOfComparisons;
+        return numberOfSwaps;
 
     }
 

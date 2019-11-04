@@ -38,7 +38,6 @@ public class SortTest {
 
         int loopCounter = 0;
         for(int i = 25; i <= MAX_ARR_LEN; i += 25){
-//        for(int i = 0; i <= 6; i += 1){
 
             loopCounter++;
 
@@ -82,10 +81,10 @@ public class SortTest {
 
         }
 
-        // Averages
+//      Averages
         int bubbleAvg       = bubbleTot / loopCounter;
         int selectionAvg    = selectionTot / loopCounter;
-        int shellAvg        = shellTot/ loopCounter;
+        int shellAvg        = shellTot / loopCounter;
         System.out.println("Bubble Average: " + bubbleAvg);
         System.out.println("Selection Average: " + selectionAvg);
         System.out.println("Shell Average: " + shellAvg);

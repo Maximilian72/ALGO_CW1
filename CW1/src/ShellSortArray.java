@@ -5,8 +5,9 @@ public class ShellSortArray {
         int arrayLength = array.length;
         int start = 0;
         int end = arrayLength -1;
-        int interval = (end - start) + 1;
+        int interval = ((end - start) + 1)/2;
         int numberOfComparisons = 0;
+        int numberOfSwaps = 0;
 
         while(interval > 0) {
 
@@ -16,17 +17,19 @@ public class ShellSortArray {
 
                 for (int j = start + interval; j <= end; j += interval) {
 
-                    Integer nextToInsert = array[j];
+                    int nextToInsert = array[j];
 
                     index = j - interval;
 
-                    while ((index >= start) && (nextToInsert.compareTo(array[index]) == -1)){
+                    numberOfComparisons++;
 
-                        numberOfComparisons++;
-
+                    while ((index >= start) && (nextToInsert < array[index])){
+                        numberOfSwaps++;
                         array[index + interval] = array[index];
 
                         index = index - interval;
+
+                        ArrayUtil.displayArrayContent(array);
                     }
 
                     array[index + interval] = nextToInsert;
@@ -38,7 +41,8 @@ public class ShellSortArray {
 
         }
 
-        return numberOfComparisons;
+//        return numberOfComparisons;
+        return numberOfSwaps;
 
     }
 

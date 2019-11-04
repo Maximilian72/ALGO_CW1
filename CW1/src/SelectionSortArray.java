@@ -3,6 +3,7 @@ public class SelectionSortArray {
     public static int selectionSort(Integer[] array){
 
         int numberOfComparisons = 0;
+        int numberOfSwaps = 0;
 
         int arrayLength = array.length;
         for(int i = 0; i <= arrayLength -1; i++){
@@ -16,6 +17,8 @@ public class SelectionSortArray {
                 numberOfComparisons++;
                 if(array[j] <= array[indexOfCurrentMinimum]){
 
+                    numberOfSwaps++;
+
                     indexOfCurrentMinimum = j;
 
                 }
@@ -26,9 +29,12 @@ public class SelectionSortArray {
 
             swap(array, i, smallest);
 
+
+
         }
 
-        return numberOfComparisons;
+//        return numberOfComparisons;
+        return numberOfSwaps;
 
     }
 
