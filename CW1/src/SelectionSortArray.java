@@ -17,8 +17,6 @@ public class SelectionSortArray {
                 numberOfComparisons++;
                 if(array[j] <= array[indexOfCurrentMinimum]){
 
-                    numberOfSwaps++;
-
                     indexOfCurrentMinimum = j;
 
                 }
@@ -27,8 +25,10 @@ public class SelectionSortArray {
 
             smallest = indexOfCurrentMinimum;
 
-            swap(array, i, smallest);
-
+            if(array[smallest] < array[i]) {
+                swap(array, i, smallest);
+                numberOfSwaps++;
+            }
 
 
         }

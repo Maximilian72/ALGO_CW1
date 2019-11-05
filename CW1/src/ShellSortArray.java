@@ -29,7 +29,7 @@ public class ShellSortArray {
 
                         index = index - interval;
 
-                        ArrayUtil.displayArrayContent(array);
+//                        ArrayUtil.displayArrayContent(array);
                     }
 
                     array[index + interval] = nextToInsert;
