@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
-public class SortTest2 {
+public class TimeTest {
 
     public static void main(String args[]){
 

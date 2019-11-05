@@ -24,12 +24,13 @@ public class ShellSortArray {
                     numberOfComparisons++;
 
                     while ((index >= start) && (nextToInsert < array[index])){
+
                         numberOfSwaps++;
+
                         array[index + interval] = array[index];
 
                         index = index - interval;
 
-//                        ArrayUtil.displayArrayContent(array);
                     }
 
                     array[index + interval] = nextToInsert;

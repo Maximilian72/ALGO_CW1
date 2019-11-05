@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 
-public class SortTest {
+public class ComparisonsTest {
 
     public static void main(String args[]){
 
@@ -17,8 +17,8 @@ public class SortTest {
         }
 
         StringBuilder builder = new StringBuilder();
-        String ColumnNamesList = "Array Length,Bubble Comparisons,Selection Comparisons,Shell Comparisons,Bubble Time,Selection Time,Shell Time";
-        builder.append(ColumnNamesList +"\n");
+        String ColumnNamesList = "Array Length,Bubble Comparisons,Selection Comparisons,Shell Comparisons\n";
+        builder.append(ColumnNamesList);
 
         Integer initialData[];
         Integer bubbleSortData[];
@@ -28,13 +28,6 @@ public class SortTest {
         int bubbleTot       = 0;
         int selectionTot    = 0;
         int shellTot        = 0;
-
-        long bubbleTime;
-        long selectionTime;
-        long shellTime;
-
-        long startTime;
-        long endTime;
 
         int loopCounter = 0;
         for(int i = 25; i <= MAX_ARR_LEN; i += 25){
@@ -50,34 +43,18 @@ public class SortTest {
             System.out.println("Array Length: " + i);
             System.out.println();
 
-            startTime = System.nanoTime();
             int bubbleComparisons       = BubbleSortArray.bubbleSort(bubbleSortData);
-            endTime = System.nanoTime();
-            bubbleTime = endTime - startTime;
-            bubbleTot += bubbleComparisons;
 
-            startTime = System.nanoTime();
             int selectionComparisons    = SelectionSortArray.selectionSort(selectionSortData);
-            endTime = System.nanoTime();
-            selectionTime = endTime - startTime;
-            selectionTot += selectionComparisons;
 
-            startTime = System.nanoTime();
             int shellComparisons        = ShellSortArray.shellSort(shellSortData);
-            endTime = System.nanoTime();
-            shellTime = endTime - startTime;
-            shellTot += shellComparisons;
 
             System.out.println("Bubble Comparisons: " + bubbleComparisons);
             System.out.println("Selection Comparisons: " + selectionComparisons);
             System.out.println("Shell Comparisons: " + shellComparisons);
             System.out.println();
-            System.out.println("Bubble Time: " + bubbleTime);
-            System.out.println("Selection Time: " + selectionTime);
-            System.out.println("Shell Time: " + shellTime);
-            System.out.println();
 
-            builder.append(i + "," + bubbleComparisons + "," + selectionComparisons + "," + shellComparisons + "," + bubbleTime + "," + selectionTime + "," + shellTime + "\n");
+            builder.append(i + "," + bubbleComparisons + "," + selectionComparisons + "," + shellComparisons + "," + "\n");
 
         }
 

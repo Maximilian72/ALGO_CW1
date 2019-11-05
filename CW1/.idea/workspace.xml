@@ -43,16 +43,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SortTest3">
-    <configuration name="SortTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SortTest" />
-      <module name="CW1#2" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SortTest2" />
+  <component name="RunManager" selected="Application.SwapsTest">
+    <configuration name="ComparisonsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ComparisonsTest" />
       <module name="CW1#2" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -65,11 +58,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SwapsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SwapsTest" />
+      <module name="CW1#2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TimeTest" />
+      <module name="CW1#2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SwapsTest" />
         <item itemvalue="Application.SortTest3" />
-        <item itemvalue="Application.SortTest2" />
-        <item itemvalue="Application.SortTest" />
+        <item itemvalue="Application.TimeTest" />
+        <item itemvalue="Application.ComparisonsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -84,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1572554434564</updated>
       <workItem from="1572694772359" duration="5697000" />
-      <workItem from="1572869519142" duration="12662000" />
+      <workItem from="1572869519142" duration="23861000" />
     </task>
     <servers />
   </component>
